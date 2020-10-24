@@ -1,0 +1,248 @@
+.info-wrap{
+  padding: 16px 24px;
+  border-right: 1px solid #09102E;
+  width: 356px;
+  float: left;
+  :global{
+    .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover{
+      background-color: #09102E
+    }
+  }
+  .imp-wrap{
+    width: 106px;
+    height: 132px;
+    position: relative;
+    .img-degree{
+      position: absolute;
+      width:56px;
+      height:24px;
+      right: 7px;
+      top: 7px;
+      font-size:16px;
+      font-weight: bold;
+      color: #ECC100;
+      background: #000000;
+      border-radius:12px;
+      opacity: 0.5;
+      text-align: center;
+    }
+    .item-img{
+      width: 106px;
+      height: 132px;
+      cursor: pointer;
+    }
+  }
+  .modal-right{
+    .modal-right-lable{
+      margin-top: 8px;
+      overflow: hidden;
+      .lable-left{
+        width: 70px;
+        text-align: left;
+        float: left;
+        color: rgba(161, 163, 173, 0.65);
+        .margin-en{
+          margin-left: 2em;
+        }
+      }
+      .lable-right{
+        float: left;
+        word-break: break-all;
+      }
+    }
+  }
+  .lable-wrap{
+    margin-top: 40px;
+    :global{
+      .ant-tag{
+        background: none;
+        height: 33px;
+        line-height: 33px;
+      }
+      .ant-btn{
+        font-size: 12px;
+      }
+    }
+    .lable-tle{
+      height: 22px;
+      line-height: 22px;
+      font-weight: bold;
+      font-size: 14px;
+      color: rgba(235,239,255,1);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.record-wrap{
+  background: #09102E;
+  float: left;
+  width: calc(100% - 356px);
+  :global {
+    .ant-tabs.ant-tabs-card {
+      height: 100%;
+      .ant-tabs-bar {
+        margin-bottom: 0;
+        background: #121938;
+        border-top: 1px solid #09102E;
+        border-bottom: 1px solid #09102E;
+        box-shadow:0px -1px 0px 0px rgba(9,16,46,1);
+        .ant-tabs-nav-container {
+          height: 48px;
+          padding: 12px 24px 0;
+        }
+        .ant-tabs-tab {
+          height: 36px;
+          line-height: 36px;
+          margin-right: 0;
+          border-color: transparent;
+          border-bottom: 1px solid #09102E;
+          background: transparent;
+        }
+        .ant-tabs-tab-active {
+          border: 1px solid #09102E;
+          border-bottom-color: transparent;
+          background: @mn-background;
+        }
+      }
+      .ant-tabs-content {
+        padding: 24px;
+        height: calc(100vh - 158px);
+        overflow: auto;
+      }
+    }
+  }
+  
+// 右侧的样式
+.index-right-wrap{
+  min-height: 200px;
+  :global{
+    .ant-card{
+      width:144px;
+      height:192px;
+      cursor: pointer;
+      background: none;
+    }
+    .ant-card:hover{
+      background: #1A2347;
+    }
+    .ant-list-empty-text {
+      height: calc(100vh - 280px);
+      min-height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ant-spin-nested-loading {
+      height: calc(100vh - 280px);
+      min-height: 200px;
+    }
+    .ant-card-body {
+      padding: 16px 15px 0px 15px;
+      text-align: center;
+    }
+    .ant-card-bordered {
+      border: none;
+    }
+    .ant-checkbox-group{
+      display: block;
+    }
+    .ant-checkbox-wrapper{
+      position: absolute;
+      top: 82px;
+      right: 13px;
+      width: 24px;
+      height: 24px;
+      border-radius: 52%;
+    }
+    .ant-checkbox .ant-checkbox-inner {
+      background: none;
+      border: 1px solid rgba(255,255,255,1);
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background: #206EFF;
+      border: 1px solid rgba(255,255,255,1);
+    }
+    .ant-list-item {
+      margin-bottom: 24px;
+    }
+    .ant-list-split .ant-list-item{
+      border-bottom: none;
+      float: left;
+      margin-left: 15px;
+    }
+  }
+  .index-right-pagi{
+    float: right;
+    margin-bottom: 10px;
+  }
+  .item-img{
+    width:96px;
+    height:118px;
+    border-radius: 2px;
+  }
+  .item-area{
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .item-channelName{
+    font-size: 12px;
+  }
+  .imp-wrap{
+    position: relative;
+    :global{
+      .ant-checkbox-inner{
+        border-radius: 50%;
+      }
+    }
+    .img-degree{
+      position: absolute;
+      width:56px;
+      height:24px;
+      right: 10px;
+      top: 3px;
+      font-size:16px;
+      font-weight: bold;
+      color: #ECC100;
+      background: #000000;
+      border-radius:12px;
+      opacity: 0.5;
+    }
+  }
+
+  .top-tool{
+    overflow: hidden;
+    margin-bottom: 10px;
+    .op-wrap{
+      float: left;
+      :global{
+        .ant-btn{
+          margin-right: 5px;
+        }
+      }
+    }
+    .search-wrap{
+      float: right;
+    }
+  }
+
+  .list-warp{
+    float: left;
+    width: calc(100vw - 400px);
+    min-width: 500px;
+  }
+}
+}
+
+
+.routes-wrap{
+  min-height: calc(100% - 100px);
+}
+
+.menu-wrap{
+  :global{
+    .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover{
+      background-color: #1A2347;
+    }
+  }
+}

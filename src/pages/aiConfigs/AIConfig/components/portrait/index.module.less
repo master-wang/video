@@ -1,0 +1,43 @@
+.portrait {
+    height: 100%;
+    padding: 24px;
+
+    :global {
+
+        .range {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .separator {
+                margin: 0 10px;
+            }
+        }
+
+        .extraTop {
+            width: 100% !important;
+            margin-bottom: 0 !important;
+            justify-content: space-between;
+            .ant-col{
+                width: 100%;
+            }
+        }
+    }
+
+    .searchTop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        :global {
+            .ant-select {
+                width: 200px;
+
+                .ant-select-selection {
+                    border: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.menu {
+  display: inline-block;
+  :global {
+    .menu-item {
+      display: inline-block;
+      padding: 0 16px;
+    }
+    .menu-item-active {
+      position: relative;
+      color: @hd-menu-highlight-color;
+      background: rgba(235, 239, 255, 0.04);
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background: @primary-color;
+      }
+      .menu-link {
+        color: @hd-menu-highlight-color;
+      }
+    }
+    .menu-link {
+      display: block;
+      padding: 9px 0;
+      color: @text-color;
+      &:hover {
+        color: @hd-menu-highlight-color;
+      }
+    }
+    .menu-icon {
+      line-height: 24px;
+      svg {
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    }
+    .menu-name {
+      line-height: 22px;
+    }
+  }
+  .drop-menu-wrap{
+    cursor: pointer;
+  }
+}

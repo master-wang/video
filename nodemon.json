@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "config",
+    "mock",
+    "scripts"
+  ]
+}

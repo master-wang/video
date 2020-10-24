@@ -1,0 +1,226 @@
+// index 的样式
+.facePage-wap{
+  .facePage-left,.facePage-right{
+    float: left;
+    height: calc(100vh - 113px);
+  }
+  .facePage-left{
+    width:240px;
+    border-right: 1px solid #09102E;
+  }
+  .facePage-right{
+    width: calc(100% - 240px);
+    padding: 8px 24px 1px 23px;
+  }
+  :global{
+    .ant-collapse {
+      background-color: inherit;
+      border: 1px solid #09102E;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 0px 9px 32px 16px;
+   }
+  }
+}
+
+// 左侧的样式
+.indexLeft-wrap{
+  :global{
+    .ant-collapse-content {
+      background-color: rgb(23, 31, 59);
+      border-top: 1px solid #09102E;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-select-selection--multiple .ant-select-selection__choice {
+      background-color: #161D3D;
+    }
+    .ant-select-dropdown-menu {
+      max-height: 500px;
+      margin-bottom: 0;
+      padding: 4px 0;
+      padding-left: 0;
+      overflow: none;
+      list-style: none;
+      outline: none;
+    }
+  }
+  .indexLeft-top{
+    width: 240px;
+    height: calc(100vh - 153px);
+    min-height: 200px;
+    overflow-y: auto;
+  }
+  .indexLeft-top::-webkit-scrollbar{
+    width: 0;
+  }
+  .indexLeft-botom{
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #09102E;
+    text-align: center;
+    :global{
+      .ant-btn{
+        width: 100px;
+        height: 24px;
+        margin-left: 8px;
+      }
+      .ant-btn:focus{
+        color: #ffffff;
+        background-color: #2F54C9;
+      }
+    }
+  }
+  .color-cube{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -4px;
+  }
+}
+
+// 左侧select下拉框
+.color-select-menu{
+  :global{
+    .ant-select-dropdown-menu {
+      max-height: 500px;
+      margin-bottom: 0;
+      padding: 4px 0;
+      padding-left: 0;
+      overflow: none;
+      list-style: none;
+      outline: none;
+    }
+    .ant-select-dropdown-menu-item {
+      height: 32px;
+      line-height: 16px;
+      padding: 8px 24px 8px 24px;
+    }
+  }
+  .color-cube{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    // background-color: red;
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-top: -4px;
+  }
+}
+
+// 右侧的样式
+.index-right-wrap{
+  height: calc(100vh - 123px);
+  min-height: 200px;
+  overflow-y: scroll;
+  :global{
+    .ant-card{
+      width:192px;
+      min-height:200px;
+      cursor: pointer;
+      background: none;
+    }
+    .ant-card:hover{
+      background: #1A2347;
+    }
+    .ant-list-empty-text {
+      height: calc(100vh - 123px);
+      min-height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ant-card-body {
+      padding: 16px 15px 0px 15px;
+      text-align: center;
+    }
+    .ant-card-bordered {
+      border: none;
+    }
+  }
+  .data-list-wrap{
+    min-height: calc(100vh - 170px);
+  }
+  .index-right-pagi{
+    float: right;
+    margin-bottom: 10px;
+  }
+  .item-img{
+    width:160px;
+    height:104px;
+  }
+  .item-area{
+    margin-top: 8px;
+  }
+}
+.index-right-wrap::-webkit-scrollbar{
+  width: 0;
+}
+.index-right-modal{
+  height: 500px;
+  .modal-left{
+    width:512px;
+    height:320px;
+    overflow: hidden;
+    .adjust-img-wrap{
+      width:512px;
+      height:320px;
+      position: relative;
+      .img-control-wrap{
+        position: absolute;
+        width: 24px;
+        bottom: 16px;
+        right: 16px;
+        z-index: 1;
+        .img-control-btn{
+          width: 29px;
+          height: 27px;
+          margin-top: 1px;
+          background-color: #EBEFFF;
+          color: #01030c;
+          text-align: center;
+          font-size: 20px;
+          padding: 0 5px 30px 5px;
+        }
+      }
+    }
+  }
+  .modal-left-img{
+    width:512px;
+    height:320px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .modal-right-img{
+    width:96px;
+    height:118px;
+  }
+  .modal-left,.modal-right{
+    float: left;
+  }
+  .modal-right{
+    width: 210px;
+    margin-left: 24px;
+    .modal-right-channel, .modal-right-time{
+      margin-top: 16px;
+    }
+    .modal-right-lable{
+      margin-top: 8px;
+      overflow: hidden;
+      .lable-left{
+        float: left;
+      }
+      .lable-right{
+        float: left;
+        width: 138px;
+        word-break: break-all;
+      }
+    }
+  }
+}

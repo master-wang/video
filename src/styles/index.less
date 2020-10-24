@@ -1,0 +1,67 @@
+@import './themes/index.less';
+@import './iconfont/iconfont.css';
+@import './reset.less';
+@import './func.less';
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(235, 239, 255, 0.25);;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(235, 239, 255, 0.25);;
+}
+
+.ant-table {
+  .ellipsis-col {
+    &:hover {
+      color: @primary-color;
+    }
+  }
+  .ellipsis-tip {
+    max-width: 200px;
+    max-height: 90px;
+    overflow: auto;
+  }
+}
+
+.ant-form {
+  .ant-checkbox-group {
+    width: 100%;
+  }
+}
+
+.ant-modal-root{
+  .range {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .separator {
+          margin: 0 10px;
+      }
+  }
+}

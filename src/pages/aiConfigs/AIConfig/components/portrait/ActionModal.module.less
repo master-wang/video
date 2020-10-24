@@ -1,0 +1,76 @@
+.action-modal {
+  :global {
+    .ant-modal-header {
+      padding: 0 24px;
+
+      .title-block {
+        padding: 16px 0;
+      }
+
+      .extra-block {
+        padding: 13px 0;
+      }
+    }
+
+    .ant-modal-body {
+      .ant-divider {
+        margin-top: 0;
+      }
+
+      .ant-form {
+        width: 85%;
+      }
+
+      .ant-form-item {
+        width: 50%;
+        display: inline-block;
+      }
+
+      .eqpt-desc-item {
+        width: 100%;
+      }
+
+      .cid {
+        width: 100%;
+      }
+
+      .pic {
+        position: absolute;
+        width: 20%;
+        top: 15%;
+        right: -5%;
+
+        .explain {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .ant-upload-picture-card-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .ant-upload-list-picture-card-container:nth-child(1) {
+            position: relative;
+
+            .ant-upload-list-item::before {
+              content: '主';
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              border-radius: 50%;
+              width: 26px;
+              height: 26px;
+              text-align: center;
+              line-height: 26px;
+              color: #000620;
+              background-color: #00CD87;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

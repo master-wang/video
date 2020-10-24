@@ -1,0 +1,92 @@
+.box-wrap{
+  padding: 24px;
+  :global{
+    .ant-btn-link {
+      margin-right: 8px;
+    }
+  }
+  // table的图片
+  .table-img{
+    width: 99px;
+    height: 50px;
+  }
+  .is-clone-car{
+    color: #00CD87;
+  }
+  .not-clone-car{
+    color: #F14D40;
+  }
+
+}
+
+:global{
+  .ant-calendar-range .ant-calendar-in-range-cell::before {
+    background: #121938;
+  }
+  .ant-select-selection--multiple .ant-select-selection__choice {
+    background-color: #161D3D;
+  }
+}
+// searchform
+.time-rangePicker{
+  width: 300px;
+  margin-left: -45%;
+}
+
+// 弹窗详情
+.modal-wrap{
+  .caritem-wrap{
+    width:812px;
+    background: #1A2347;
+    border:1px solid rgba(235,239,255,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    .form-left{
+      flex: 1;
+      :global{
+        .ant-descriptions-title, .ant-descriptions-item-label,.ant-descriptions-item-content {
+          color:#EBEFFF;
+        }
+      }
+      .car-info{
+        height: 176px;
+        display: flex;
+        flex-direction: row;
+        padding: 21px 0 21px 24px;
+        border-bottom:1px solid rgba(235,239,255,0.08);
+        .img-wrap{
+          min-width: 132px;
+          height: 86px;
+          text-align: center;
+          cursor: pointer;
+          img{
+            min-width: 132px;
+            min-height: 86px;
+            max-height: 86px;
+          }
+        }
+        .img-detail{
+          margin-left: 32px;
+        }
+      }
+      .item-title{
+        height:24px;
+        font-size:14px;
+        font-weight: bold;
+        color:#EBEFFF;
+        line-height:24px;
+      }
+      .bottom-wrap{
+        padding: 21px 0 21px 24px;
+      }
+    }
+    .form-right{
+      border-left:1px solid rgba(235,239,255,0.08);
+      flex-basis: 114px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

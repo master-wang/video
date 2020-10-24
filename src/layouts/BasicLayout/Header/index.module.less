@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  height: @hd-height;
+  line-height: @hd-height;
+  color: @text-color;
+  background: @hd-background;
+
+  :global {
+    .hd-l {
+      padding: 0 16px;
+      width: 216px;
+    }
+    .hd-m {
+      flex: 1;
+      text-align: center;
+    }
+    .hd-r {
+      width: 216px;
+      text-align: right;
+      padding-right: 50px;
+    }
+  }
+}

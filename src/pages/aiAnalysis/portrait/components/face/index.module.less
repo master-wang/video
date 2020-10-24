@@ -1,0 +1,239 @@
+// index 的样式
+.facePage-wap{
+  .facePage-left,.facePage-right{
+    float: left;
+    height: calc(100vh - 113px);
+  }
+  .facePage-left{
+    width:240px;
+    border-right: 1px solid #09102E;
+  }
+  .facePage-right{
+    width: calc(100% - 240px);
+    padding: 8px 24px 1px 23px;
+  }
+  :global{
+    .ant-collapse {
+      background-color: inherit;
+      border: 1px solid #09102E;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 0px 9px 32px 16px;
+   }
+  }
+}
+
+// 左侧的样式
+.indexLeft-wrap{
+  :global{
+    .ant-collapse-content {
+      background-color: rgb(23, 31, 59);
+      border-top: 1px solid #09102E;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-upload.ant-upload-select-picture-card {
+      background: #1A2347;
+    }
+    .ant-select-selection--multiple .ant-select-selection__choice {
+      background-color: #1A2347;
+    }
+    
+  }
+  .indexLeft-top{
+    width: 240px;
+    height: calc(100vh - 153px);
+    min-height: 200px;
+    overflow-y: auto;
+  }
+  .indexLeft-top::-webkit-scrollbar{
+    width: 0;
+  }
+  .indexLeft-botom{
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #09102E;
+    text-align: center;
+    :global{
+      .ant-btn{
+        width: 100px;
+        height: 24px;
+        margin-left: 8px;
+      }
+      .ant-btn:focus{
+        color: #ffffff;
+        background-color: #2F54C9;
+      }
+      .ant-upload-select-picture-card i {
+        color: #999;
+        font-size: 32px;
+      }
+      
+      .ant-upload-select-picture-card .ant-upload-text {
+        margin-top: 8px;
+        color: #666;
+      }
+    }
+  }
+  .form-number{
+    width: 212px;
+  }
+  // 上传图片的
+  .upload-wrap{
+    :global{
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        width: 62px;
+        height: 88px;
+      }
+      .ant-upload-list-picture-card-container {
+        width: 62px;
+        height: 88px;
+      }
+      .ant-upload.ant-upload-select-picture-card {
+        width: 62px;
+        height: 88px;
+      }
+      .ant-upload-list-picture-card .ant-upload-list-item-uploading.ant-upload-list-item{
+        background-color: #1A2347;
+      }
+    }
+  }
+}
+
+
+// 右侧的样式
+.index-right-wrap{
+  height: calc(100vh - 123px);
+  min-height: 200px;
+  overflow-y: scroll;
+  :global{
+    .ant-card{
+      width:144px;
+      height:192px;
+      cursor: pointer;
+      background: none;
+    }
+    .ant-card:hover{
+      background: #1A2347;
+    }
+    .ant-list-empty-text {
+      height: calc(100vh - 123px);
+      min-height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .ant-spin-nested-loading {
+      height: calc(100vh - 123px);
+      min-height: 200px;
+    }
+    .ant-card-body {
+      padding: 16px 15px 0px 15px;
+      text-align: center;
+    }
+    .ant-card-bordered {
+      border: none;
+    }
+  }
+  .index-right-pagi{
+    float: right;
+    margin-bottom: 10px;
+  }
+  .item-img{
+    width:96px;
+    height:104px;
+  }
+  .item-area{
+    margin-top: 8px;
+  }
+  .imp-wrap{
+    position: relative;
+    .img-degree{
+      position: absolute;
+      width:56px;
+      height:24px;
+      right: 10px;
+      font-size:16px;
+      font-weight: bold;
+      color: #ECC100;
+      background: #000000;
+      border-radius:12px;
+      opacity: 0.5;
+    }
+  }
+}
+.index-right-wrap::-webkit-scrollbar{
+  width: 0;
+}
+
+// 人脸对比弹窗详情
+.modal-wrap{
+  :global{
+    .ant-modal-content {
+      background: #161C3D;
+    }
+  }
+  .modal-left{
+    width:512px;
+    height:320px;
+    overflow: hidden;
+    .img-item, .img-middle{
+      float: left;
+    }
+    .img-item{
+      text-align: center;
+      img{
+        width:96px;
+        height:118px;
+        margin-bottom: 10px;
+      }
+    }
+    .img-middle{
+      width: 280px;
+      height: 151px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url('../../image/face_mid.png');
+      position: relative;
+      .img-similar{
+        height:24px;
+        font-size:32px;
+        line-height: 24px;
+        position: absolute;
+        color: #ECC100;
+        left: 104px;
+        top: 68px;
+      }
+    }
+  }
+  .modal-right-img{
+    width:96px;
+    height:118px;
+  }
+  .modal-left,.modal-right{
+    float: left;
+  }
+  .modal-right{
+    width: 250;
+    .modal-right-channel, .modal-right-time{
+      margin-top: 16px;
+    }
+    .modal-right-lable{
+      margin-top: 8px;
+      overflow: hidden;
+      .lable-left{
+        width: 86px;
+        text-align: left;
+        float: left;
+      }
+      .lable-right{
+        float: left;
+        width: 138px;
+        word-break: break-all;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.db-wrap{
+  overflow: hidden;
+  background: #09102E;
+  padding: 10px 0;
+  min-height: calc(100vh - 200px);
+  // position: relative;
+  :global{
+    .ant-card-body{
+      padding: 16px;
+      .anticon{
+        float: right;
+        position: absolute;
+        right: 0;
+      }
+    }
+    .ant-list-items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(auto-fill,350px);
+      }
+    .ant-list{
+      min-height: calc(100vh - 300px);
+      float: left;
+      width: calc(100vw - 10px);
+      min-width: 500px;
+    }
+    .ant-list-split .ant-list-item{
+      border-bottom: none;
+      // float: left;
+      margin-left: 24px;
+      min-width: 328px;
+    }
+  }
+  .list-wrap{
+    float: left;
+    width: calc(100vw - 10px);
+    min-width: 500px;
+  }
+  .pagination-wrap{
+    float: left;
+    display: grid;
+    width: calc(100vw - 10px);
+    min-width: 500px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    :global{
+      .ant-pagination{
+        width: 700px;
+        margin: 12px 0 14px 38px;
+        grid-column-end: -2;
+      }
+    }
+  }
+  .card-wrap{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    .imp-wrap{
+      float: left;
+      position: relative;
+      .img-degree{
+        position: absolute;
+        width:56px;
+        height:24px;
+        top:5px;
+        right: 5px;
+        font-size:16px;
+        font-weight: bold;
+        color: #ECC100;
+        background: #000000;
+        border-radius:12px;
+        opacity: 0.5;
+        text-align: center;
+      }
+      .item-img{
+        width: 106px;
+        height: 132px;
+        cursor: pointer;
+      }
+      .close-btn{
+      }
+    }
+    .item-area{
+      float: left;
+      margin-left: 12px;
+      .item-name{
+        height: 22px;
+        line-height: 22px;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(235,239,255,0.87);
+      }
+      .item-p-wrap{
+        p{
+          font-size: 12px;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+  
+}
+
+.smart-wrap{
+  .smart-icon{
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.menu-wrap{
+  margin-top: 9px;
+  width: 236px;
+  left: -202px !important;
+}
+
+.menu-wrap{
+  :global{
+    .ant-upload.ant-upload-drag {
+      background-color: #1A2347;
+    }
+    .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover{
+      background-color: #1A2347;
+    }
+  }
+}
+
+.search-box{
+  :global{
+    .ant-form .ant-form-item{
+      width: 25%;
+    }
+  }
+}

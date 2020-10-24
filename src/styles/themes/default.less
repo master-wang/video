@@ -1,0 +1,68 @@
+@import '~antd/lib/style/themes/default.less';
+
+// antd主题重置
+@primary-color: #206EFF;
+@text-color: fade(#EBEFFF, 65%);
+@text-color-secondary: fade(#EBEFFF, 45%);
+@heading-color: fade(#EBEFFF, 85%);
+@icon-color-hover: fade(#EBEFFF, 75%);
+@border-color-base: rgba(235, 239, 255, 0.08);
+@border-color-split: rgba(235, 239, 255, 0.09);
+@border-radius-base: 2px;
+@component-background: #1A2347;
+
+@primary-1: color(~`colorPalette('@{primary-color}', 1) `);
+
+// Outline
+@background-color-base: #1F294F;
+
+// Disabled states
+@disabled-color: fade(#EBEFFF, 25%);
+@item-hover-bg: @primary-color;
+
+
+// LINK
+@link-color: #00CD87;
+@link-hover-color: color(~`colorPalette('@{link-color}', 5) `);
+@link-active-color: color(~`colorPalette('@{link-color}', 7) `);
+
+// Checkbox
+@checkbox-check-color: #1A2347;
+
+// Input
+@input-border-color: @border-color-base;
+@input-addon-bg: @component-background;
+@input-placeholder-color: fade(#EBEFFF, 38%);
+
+// Select
+@select-item-selected-bg: rgba(235, 239, 255, 0.08);
+@select-item-active-bg: @select-item-selected-bg;
+
+// Tooltip
+@tooltip-color: @text-color;
+@tooltip-bg: @component-background;
+
+// Table
+// 框架提供
+@table-header-color: #FFF;
+@table-header-bg: #1F294F;
+@table-row-hover-bg: #0B1333;
+@table-selected-row-bg: innherit;
+@table-padding-vertical: 8px;
+@table-padding-horizontal: 16px;
+@table-border-radius-base: 2px;
+// 自定义
+@table-row-bg: @component-background;
+@table-border-color: #161D3D;
+
+// 页面头部设置
+@hd-height: 64px;
+@hd-background: #0B1338;
+@hd-menu-highlight-color: #FFF;
+
+// 主栏设置
+@mn-background: #161D3D;
+
+// Tree
+@tree-node-hover-bg: @primary-color;
+@tree-node-selected-bg: @primary-color;

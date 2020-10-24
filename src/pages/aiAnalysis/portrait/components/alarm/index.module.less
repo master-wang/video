@@ -1,0 +1,178 @@
+.box-wrap{
+  padding: 24px;
+  :global{
+    .ant-btn-link {
+      margin-right: 8px;
+    }
+    .ant-select-selection__choice{
+      background: #121938;
+    }
+  }
+  // table的图片
+  .table-img{
+    width:48px;
+    height:59px;
+  }
+}
+
+:global{
+  .ant-calendar-range .ant-calendar-in-range-cell::before {
+    background: #121938;
+  }
+}
+// searchform
+.time-rangePicker{
+  width: 300px;
+  margin-left: -45%;
+}
+
+
+// 人脸抓拍弹窗详情
+.modal-wrap{
+  padding-bottom: 24px;
+  :global{
+    .ant-modal-content {
+      background: #161C3D;
+    }
+  }
+  .modal-left{
+    width:512px;
+    height:286px;
+    overflow: hidden;
+    .img-item, .img-middle{
+      float: left;
+    }
+    .img-item{
+      text-align: center;
+      img{
+        width:96px;
+        height:118px;
+        margin-bottom: 10px;
+      }
+    }
+    .img-middle{
+      width: 280px;
+      height: 151px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-image: url('../../image/face_mid.png');
+      position: relative;
+      .img-similar{
+        height:24px;
+        font-size:32px;
+        line-height: 24px;
+        position: absolute;
+        color: #ECC100;
+        left: 104px;
+        top: 68px;
+      }
+    }
+  }
+  .modal-right-img{
+    width:96px;
+    height:118px;
+  }
+  .modal-left,.modal-right{
+    float: left;
+  }
+  .modal-right{
+    width: 250;
+    .modal-right-channel, .modal-right-time{
+      margin-top: 16px;
+    }
+    .modal-right-lable{
+      margin-top: 8px;
+      overflow: hidden;
+      .lable-left{
+        width: 86px;
+        text-align: left;
+        float: left;
+      }
+      .lable-right{
+        float: left;
+        width: 138px;
+        word-break: break-all;
+      }
+    }
+  }
+  // 走马灯
+  .rotate-wrap{
+    position: relative;
+    padding: 24px;
+    padding-left: 0;
+    .list-wrap{
+      position: relative;
+      padding: 24px;
+      height: 190px;
+      width: 790px;
+      overflow: hidden;
+      ul{
+        position: absolute;
+        left: 20px;
+        transition: all 0.5s;
+      }
+      ul > li {
+        float: left;
+        padding-left: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        text-align: center;
+        min-height: 165px;
+        cursor: pointer;
+      }
+      .click-li{
+        border:1px solid #2f589b;
+      }
+      .item-img{
+        width:96px;
+        height:104px;
+      }
+      .item-area{
+        margin-top: 8px;
+      }
+      .imp-wrap{
+        position: relative;
+        width: 118px;
+        height: 104px;
+        .img-degree{
+          position: absolute;
+          width:56px;
+          height:24px;
+          right: 10px;
+          font-size:16px;
+          font-weight: bold;
+          color: #ECC100;
+          background: #000000;
+          border-radius:12px;
+          opacity: 0.5;
+        }
+      }
+    }
+    .left-control,.right-control{
+      position: absolute;
+      width:48px;
+      height:48px;
+      font-size: 42px;
+      top: 92px;
+      z-index: 1000;
+      cursor: pointer;
+    }
+    .left-control{
+      left: -20px;
+    }
+    .right-control{
+      right: -20px;
+    }
+  
+  }
+  .enpty-list{
+    height: 190px;
+    width: 790px;
+  }
+  .top-enpty-list{
+    height: 569px;
+    width: 790px;
+  }
+}

@@ -1,0 +1,88 @@
+.wrap{
+  height:100%;
+  width: 100%;
+  font-size: 0;
+  padding: 12px;
+  padding-bottom: 0;
+}
+
+.four-frame{
+  display: inline-block;
+  height:50%;
+  width:50%;
+  padding: 4px 2px 0;
+  position: relative;
+  overflow: hidden;
+  video{
+    height: 100%;
+    width: 100%;
+    background: #09102E;
+  }
+  .frame-tool{
+    position: absolute;
+    z-index: 1;
+    bottom: -120px;
+    right: 0px;  
+    padding-right: 30px;
+    transition: all 0.5s;
+    width: 100%;
+    text-align: right;
+    background: rgba(9,16,46,0.6);
+    .video-btn{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      line-height: 40px;
+      font-size: 20px;
+      text-align: center;
+      &:hover {
+        color: @primary-color;
+      }
+    }
+  }
+  .frame-tool-fill{
+    // svg {
+    //   font-size: 50px;
+    // }
+    // span {
+    //   width: 75px;
+    // }
+  }
+  &:hover {
+    .frame-tool{
+      position: absolute;
+      z-index: 1;
+      bottom: 0px;
+      right: 0px;
+      padding-right: 30px;  
+      transition: all 0.5s;
+      width: 100%;
+      text-align: right;
+      background: rgba(9,16,46,0.6);
+    }
+  }
+}
+
+.video-frame{
+  padding: 1px;
+  height: 100%;
+  width: 100%;
+}
+
+.active{
+  background-color: blue;
+}
+
+// .four-frame:nth-of-type(1){
+//   border-bottom: 4px solid #121938;
+//   border-right: 4px solid #121938;
+// }
+
+// .four-frame:nth-of-type(2){
+//   border-bottom: 4px solid #121938;
+// }
+
+// .four-frame:nth-of-type(3){
+//   border-right: 4px solid #121938;
+// }
