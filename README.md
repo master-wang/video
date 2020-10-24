@@ -2,7 +2,7 @@
 
 ## Project Introduction
 
-视频大数据平台
+人脸前端
 
 ## Project setup
 
